@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Recommendation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <nav class="mb-3 navbar navbar-dark bg-dark">
+                <a class="navbar-brand" style="font-family: Geneva;">AnimeRec</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Genre Anime
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.google.com/search?q=anime+genre+action&oq=anime+genre+action&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDgwOTVqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8">Action</a>
+                                <a class="dropdown-item" href="https://www.google.com/search?q=anime+genre+romance&sca_esv=518c046ebb1e337c&sca_upv=1&ei=CFX6ZpKdN5SwseMP7fGXcQ&oq=anime+genre+ro&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmFuaW1lIGdlbnJlIHJvKgIIADIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI-y1QjwNYphNwAXgBkAEAmAHpBaABtyKqAQkyLTIuNS00LjK4AQHIAQD4AQGYAgSgAtoMwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAg4QABiwAxjkAhjWBNgBAcICFhAuGIAEGLADGEMY1AIYyAMYigXYAQHCAhMQLhiABBiwAxhDGMgDGIoF2AEBwgIKEAAYgAQYQxiKBZgDAIgGAZAGE7oGBggBEAEYCZIHCzEuMC4xLjAuMS4xoAfaLA&sclient=gws-wiz-serp">Romance</a>
+                                <a class="dropdown-item" href="https://www.google.com/search?q=anime+comedy+school&sca_esv=518c046ebb1e337c&sca_upv=1&ei=dFX6Zr3uI5-xseMPu7yRoAg&oq=anime+genre+comedy+slice+of+life&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGFuaW1lIGdlbnJlIGNvbWVkeSBzbGljZSBvZiBsaWZlKgIIAzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYR0juHFAAWABwAXgBkAEAmAEAoAEAqgEAuAEByAEAmAIBoAIamAMAiAYBkAYIkgcBMaAHAA&sclient=gws-wiz-serp#wvs=q:anime%2520school,stick:H4sIAAAAAAAAAO2UvW_TQBiHY5I0ySX90ItAKAOqOkYg20nspBUSAoQqBoREKzFG8Ufs2PFHbDexPYJYMjIzdWbgn0BAJSSEBCMDTDAiBpAYcHx3djq3AwPb73nP7-nu0Xuubnxhnlyob3379fli8zfz7MXbT8wPBtUO5CNJVQ5nFrxnUHHoafCGgVfJwj07UD1flQO4gyoPXNUb2gr0QUTlfc85cuFSXkVQRWv3ndlY9eFyXq5DDVUOZwe6M_ehl9evQQtVH7Xn-6rtqXAVrd21g3EQQb2ZfM9aLGeEUbOyVx7aY0uFvbyRheuo9lCdDIPkxA5sZ52NJkLVZacYK0azurfmy7rjTHbg-9Pnf-oNQMu1TmQa_m7juPi4jMq30r1_nhLwkQh4x8DJ-Qs4wz3gRt7LA7vau5P1bjQbaOWey27ZsVQl2tlMLdQgc7uOF7aJJVpvrbMay_NSaIwCW-gTlAU_sIR-nGHAywonU5z4ESdIHMGR2OGiqD2nGOxO2zHvZRjFg7BNd9YG06nsTkOK0jyaDaQOQVPc1fmu0W7Vl8fjuREnWv0c5FAnwPdFc2q3aim4lhTi2BNiu9tKjWiC2KNZ1z3elEl2dSvQcDYGcUc0cTbFgWHaONsjt9vr0hwEpovzrKPpnoLzPJwpvQ7OseZKQo8r3L7Cys5kkozP2LHZRPd4ONCWA--rhULh5nHxawlVDlTTmQx1OP0QP5A5PGHg9T_0EM82hFvpECYHzMa7kW67Tdaz-v8pPMcpXJRO26RMdeaMfWZMhFKmRjMmSnPGTilTqRkTq5Sp1kVp1esKJWIpYbOLUq6W5NTtorQilwC2SyHVSwD7JYAFE8CGM1gqJoAdE8CSCWDLx2Uyyfh3-rJc-guoCrEvbAcAAA,nfpr:1&wxpd=browse:true">School</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">More here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Tugas Lainnya
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="C:/PORWEB/index.html">Tugas 1</a>
+                                <a class="dropdown-item" href="C:/PORWEB/index2.html">Tugas 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Soon</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Another titles</button>
+                    </form>
+                </div>
+            </nav>
+            
+            <div class="row">
+                <div class="col">
+                    <h1 class="mt-4">Selamat Datang di Laman AnimRec</h1>
+                    <p style="font-family: cursive;">Terimakasih sudah berkunjung!!</p>
+                    <p class="mt-4 mb-3">
+                        Anime adalah bentuk seni visual yang berasal dari Jepang dan telah berkembang menjadi fenomena global. 
+                        Gaya gambar yang unik, cerita yang mendalam, dan karakter yang beragam membuat anime mampu menarik perhatian berbagai kalangan.
+                        Banyak genre anime, mulai dari aksi, petualangan, hingga drama, komedi, dan romansa.
+                        Anime seringkali diadaptasi dari manga, novel ringan, atau permainan video. 
+                        Proses pembuatan anime melibatkan berbagai elemen, mulai dari desain karakter hingga pengembangan latar belakang cerita, yang semuanya dikemas dalam bentuk visual yang menarik.
+                    </p>
+                    <a class="btn btn-outline-danger" href="https://www.bilibili.tv/id/anime" role="button">Watching Here</a>
+                </div>
+                <div class="col"> 
+                    <img src="lucu.jpg" alt="" width="400" class="mt-4">
+                </div>
+            </div>  
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 80%;">
+                        <img src="wr.jpg" class="card-img-top" alt="Wind Breaker">
+                        <div class="card-body">
+                            <h5 class="card-title">Wind Breaker</h5>
+                            <p class="card-text">Sakura adalah seorang penyendiri dan berandalan SMA yang ingin menjadi petarung di puncak dunia. Dia pergi ke SMA Furin, sebuah sekolah menengah yang terkenal karena anak-anak nakalnya. sekarang dikenal sebagai "Chime of the Wind Breaker" - Bofurin.</p>
+                            <a href="#" class="btn btn-dark">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 80%;">
+                        <img src="die.jpg" class="card-img-top" alt="The Apothecary Diaries">
+                        <div class="card-body">
+                            <h5 class="card-title">The Apothecary Diaries</h5>
+                            <p class="card-text"> Maomao, seorang gadis sederhana yang dibesarkan di kota sederhana oleh ayahnya yang seorang apotekernya. Ia tidak pernah membayangkan bahwa ia akan berhubungan maupun tinggal di istana-hougang sampai dia diculik dan dijual untuk bertugas di sana.</p>
+                            <a href="#" class="btn btn-dark">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 80%;">
+                        <img src="kyu.jpg" class="card-img-top" alt="The Yakuza's Guide to Babysitting">
+                        <div class="card-body">
+                            <h5 class="card-title">Haikyu!!</h5>
+                            <p class="card-text">Cerita ini mengikuti perjuangan tim Karasuno untuk bangkit kembali sebagai tim voli yang kuat, menghadapi berbagai rival yang tangguh, dan mengejar impian mereka di turnamen nasional. Berlatar di SMA Karasuno anime ini menonjolkan persahabatan dan kerjasama tim.</p>
+                            <a href="#" class="btn btn-dark">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
